@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+ --white: hsl(0, 0%, 100%);
+ --nutmeg: hsl(14, 45%, 36%);
+ --dark-raspberry: hsl(332, 51%, 32%);
+ --rose-white: hsl(330, 100%, 98%);
+ --eggshell: hsl(30, 54%, 90%);
+ --light-gray:  hsl(30, 18%, 87%);
+ --wenge-brown: hsl(30, 10%, 34%);
+ --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+/*body {
+ background-color: var(--eggshell);
+}*/
+
+h1, h2 {
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;  
+}
+
+p, li, td {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--wenge-brown);
+}
+
+p, li {
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.recipe-container {
+    width: 100vw;
+    margin: 10vw auto;
+    padding: 2rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+h1 {
+    color: var(--dark-charcoal);
+}
+
+h2 {
+    color: var(--nutmeg);
+}
+
+h1, h2, p {
+    margin: 20px auto;
+}
+
+li {
+    margin: 1rem auto;
+}
+
+li, p {
+    /* color: var(--wenge-brown);*/
+    font-size: 1rem;
+}
+
+ol li {
+    list-style-type: none;
+    counter-increment: lista; /* Un nombre identificativo que te guste */
+    position: relative;
+    }
+    
+    ol li::before {
+    color: var(--nutmeg);
+    content: counter(lista) "."; /* Indica el separador para tu contenido */
+    left: -32px;
+    position: absolute;
+    text-align: right;
+    width: 26px;
+    font-weight: bolder;
+    }
+
+.prep-container {
+    background-color: var(--rose-white);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+h3 {
+    color: var(--dark-raspberry);
+}
+
+hr {
+    background-color:  var(--light-gray);
+    height: 1px;
+    border: 0; 
+    color: var(--dark-charcoal);
+    margin-top: 30px;
+ }
+
+ table, td {
+    border-bottom: 1px solid var(--light-gray);
+    border-collapse: collapse;
+    width: 100%;
+    line-height: 2.5;
+  }
+
+ table:last-child, .td-border {
+    border-bottom: none;
+  }
+
+  td {
+    padding-left: 30px;
+    width: 50%; !important
+  }
+
+  .td-color {
+    color:  var(--nutmeg);
+    font-weight: bold;
+    width: 75%;
+  }
+
+
+   @media screen and (min-width: 768px) {
+
+body {
+    background-color: var(--eggshell);
+   }
+    
+.recipe-container {
+    background-color: var(--white);
+    width: 80vw;
+    margin: 10vw auto;
+    padding: 2rem;
+    border-radius: 20px;
+}
+   }
+
+   @media screen and (min-width: 900px) {   
+.recipe-container {
+    width: 60vw;
+}
+   }
+
+
